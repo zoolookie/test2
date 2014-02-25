@@ -11,3 +11,4 @@
     display: block;
     margin: 0 auto;
   }
+::selection {color:red;background:rgba(0,0,0,0.0);}
