@@ -1,18 +1,25 @@
 <!DOCTYPE html>
 <html>
 <body>
-
-<div>
-   <center>
-      <img src="2euros.jpg" alt="foo" />
-   </center>
-<script>
-var width = screen.width;
-var height = screen.height;
-document.write("<p>My First JavaScript "+width+" "+height+"</p>");
-</script>
-
-</div>
-
+  <table id="table-foo">
+    <tr><td>
+        <img src="2euros.jpg" /> 
+    </td></tr>
+  </table>
 </body>
+<style type="text/css">
+  html, body {
+    height: 100%;
+  }
+  #table-foo {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+  }
+  #table-foo img {
+    display: block;
+    margin: 0 auto;
+  }
+</style>
 </html>
