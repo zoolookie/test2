@@ -4,7 +4,9 @@
 <link rel="stylesheet" type="text/css" href="mystyle.css">
 </head>
 <body>
-<script src="hammer.js"></script>
+<script type="text/javascript" charset="utf-8" src="hammer.js"></script>
+<script type="text/javascript" charset="utf-8" src="phonegap-1.0.0.js"></script>
+
   <table id="table-foo">
     <tr><td>
 		<img id="test_el" src="1euros.jpg" />
@@ -15,6 +17,7 @@ var element = document.getElementById('test_el');
 var hammertime = Hammer(element).on("pinch", function(event)
 	{/*alert('hello!');*/
 	element.src = (element.src.substring(element.src.lastIndexOf('/')+1) == '2euros.jpg' ? '1euros.jpg' : '2euros.jpg');
+	navigator.notification.vibrate(2000);
 	});
 </script>
 
