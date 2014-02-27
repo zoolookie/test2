@@ -12,7 +12,7 @@
   </table>
 <script>
 var element = document.getElementById('test_el');
-var hammertime = Hammer(element).on("swipe", function(event)
+var hammertime = Hammer(element).on("pinch", function(event)
 	{/*alert('hello!');*/
 	element.src = (element.src.substring(element.src.lastIndexOf('/')+1) == '2euros.jpg' ? '1euros.jpg' : '2euros.jpg');
 	});
