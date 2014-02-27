@@ -1,0 +1,11 @@
+<widget id="com.example.hello" version="0.0.1">
+        <name>Euros</name>
+        <description>
+            swap eruros piching
+        </description>
+        <author email="zoolookie@gmail.com" href="http://www.gmail.com">
+            Zoolookie
+        </author>
+        <content src="index.html" />
+        <access origin="*" />
+    </widget>
