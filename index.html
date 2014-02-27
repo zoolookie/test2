@@ -4,11 +4,19 @@
 <link rel="stylesheet" type="text/css" href="mystyle.css">
 </head>
 <body>
+<script src="hammer.js"></script>
   <table id="table-foo">
     <tr><td>
-		<img src="1euros.jpg" onclick="/*alert(this.src.substring(this.src.lastIndexOf('/')+1));*/ this.src = (this.src.substring(this.src.lastIndexOf('/')+1) == '2euros.jpg' ? '1euros.jpg' : '2euros.jpg');"/>
+		<img id="test_el" src="1euros.jpg" />
     </td></tr>
   </table>
+<script>
+var element = document.getElementById('test_el');
+    var hammertime = Hammer(element).on("tap", function(event) {
+        alert('hello!');
+    });
+</script>
+
 </body>
 
 </html>
