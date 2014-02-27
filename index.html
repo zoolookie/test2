@@ -12,9 +12,10 @@
   </table>
 <script>
 var element = document.getElementById('test_el');
-    var hammertime = Hammer(element).on("swipe", function(event) {
-        alert('hello!');
-    });
+var hammertime = Hammer(element).on("swipe", function(event)
+	{/*alert('hello!');*/
+	element.src = (element.src.substring(element.src.lastIndexOf('/')+1) == '2euros.jpg' ? '1euros.jpg' : '2euros.jpg');
+	});
 </script>
 
 </body>
