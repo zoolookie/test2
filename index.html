@@ -6,7 +6,7 @@
 <body>
   <table id="table-foo">
     <tr><td>
-		<img src="1euros.jpg" onclick="this.src = (this.src == '2euros.jpg' ? '1euros.jpg' : '2euros.jpg');"/>
+		<img src="1euros.jpg" onclick="alert(window.location.pathname);pref='file:///C:/Users/Alfonso/Documents/GitHub/test2/';this.src = (this.src == pref+'2euros.jpg' ? '1euros.jpg' : '2euros.jpg');"/>
     </td></tr>
   </table>
 </body>
