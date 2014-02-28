@@ -19,9 +19,11 @@ var hammertime = Hammer(element).on("pinch", function(event)
 	{/*alert('hello!');*/
 	element.src = (element.src.substring(element.src.lastIndexOf('/')+1) == '2euros.jpg' ? '1euros.jpg' : '2euros.jpg');
 	navigator.notification.vibrate(200);
+	navigator.notification.alert("mensaje", null, "titulo", 'OK');
 	});
 </script>
 
+<script src="phonegap.js"></script>
 </body>
 
 </html>
