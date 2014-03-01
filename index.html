@@ -20,6 +20,7 @@ var element = document.getElementById('test_el');
 var hammertime = Hammer(element).on("pinch", function(event)
 	{
 	pinchi++;
+	ev.gesture.preventDefault();
 	//alert('hello!');
 	});
 function animEuro() 
