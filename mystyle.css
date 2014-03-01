@@ -18,7 +18,7 @@ bodyy {
     margin: 0 auto;
   }
 #test_el {
-    width: 90%;
+    width: 50%;
     height: auto;
   }
   ::selection {color:red;background:rgba(0,0,0,0.0);}
