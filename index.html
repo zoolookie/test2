@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <link rel="stylesheet" type="text/css" href="mystyle.css">
 </head>
 <body>
@@ -12,6 +13,9 @@
     </td></tr>
   </table>
 <script>
+$.get("https://script.google.com/macros/s/AKfycbwH0DX9yV67pGJMAn4jl6IogNLllPBYZg38ePLTXB-hmOHMf5R4/exec",function(data,status){
+    alert("Data: " + data + "\nStatus: " + status);
+  });
 setInterval(animEuro, 1010);      // run the function animBall() every 80 milliseconds.
 setInterval(animVib, 252);      // run the function animBall() every 80 milliseconds.
 var pinchi=0;
@@ -20,7 +24,7 @@ var element = document.getElementById('test_el');
 var hammertime = Hammer(element).on("pinch", function(event)
 	{
 	pinchi++;
-	ev.gesture.preventDefault();
+	//ev.gesture.preventDefault();
 	//alert('hello!');
 	});
 function animEuro() 
