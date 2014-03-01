@@ -18,7 +18,7 @@
 //	}
 //, 500);      // run the function animBall() every 80 milliseconds.
 setInterval(animEuro, 1010);      // run the function animBall() every 80 milliseconds.
-setInterval(animVib, 500);      // run the function animBall() every 80 milliseconds.
+setInterval(animVib, 1000);      // run the function animBall() every 80 milliseconds.
 //var hammertime = Hammer(element).on("pinch", function(event)
 //	{
 	//element.src = (element.src.substring(element.src.lastIndexOf('/')+1) == '2euros.jpg' ? '1euros.jpg' : '2euros.jpg');
@@ -27,12 +27,12 @@ setInterval(animVib, 500);      // run the function animBall() every 80 millisec
 	//alert('hello!');
 //	});
 //	animEuro();
-//	var element = document.getElementById('test_el');
+	var element = document.getElementById('test_el');
 function animEuro() 
 	{//setTimeout('animEuro()', 1900);
 //	var element = document.getElementById('test_el');
-//	element.src = (element.src.substring(element.src.lastIndexOf('/')+1) == '2euros.jpg' ? '1euros.jpg' : '2euros.jpg');
-	document.getElementById('test_el').src = (document.getElementById('test_el').src.substring(document.getElementById('test_el').src.lastIndexOf('/')+1) == '2euros.jpg' ? '1euros.jpg' : '2euros.jpg');
+	element.src = (element.src.substring(element.src.lastIndexOf('/')+1) == '2euros.jpg' ? '1euros.jpg' : '2euros.jpg');
+//	document.getElementById('test_el').src = (document.getElementById('test_el').src.substring(document.getElementById('test_el').src.lastIndexOf('/')+1) == '2euros.jpg' ? '1euros.jpg' : '2euros.jpg');
 //	navigator.notification.vibrate(50);
 	//alert('hello!');
 	}
