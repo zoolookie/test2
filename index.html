@@ -13,7 +13,7 @@
   </table>
 <script>
 setInterval(animEuro, 1010);      // run the function animBall() every 80 milliseconds.
-setInterval(animVib, 750);      // run the function animBall() every 80 milliseconds.
+setInterval(animVib, 400);      // run the function animBall() every 80 milliseconds.
 var pinchi=0;
 var rapido=0;
 var element = document.getElementById('test_el');
@@ -31,7 +31,7 @@ function animVib()
 	{
 	if (pinchi>0)
 		{//si pinchi cada vez
-		navigator.notification.vibrate(25);
+		navigator.notification.vibrate(35);
 		pinchi=0;
 		}
 	else if (rapido==0)
@@ -42,7 +42,7 @@ function animVib()
 	else if (rapido==1)
 		{//si no pinchi una de cada dos, esta sí
 		rapido=0;
-		navigator.notification.vibrate(25);
+		navigator.notification.vibrate(50);
 		}
 	//alert('hello!');
 	}
